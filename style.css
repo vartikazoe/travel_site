@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 00.15em;
+    font-weight: 500;
+}
+
+.navbar
+{
+    padding: 1rem;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+ .navbar .logo
+{
+    float: left;
+    font-size: 3.5rem;
+}
+
+
+ .navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+
+
+ .navbar .nav-item
+{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar::after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.navbar a:link, .navbar a:visited
+{
+    color: #c6e590;
+}
+/*---------utility class----------*/
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading
+{
+    font-size: 3.5rem;
+}
+.md-heading
+{
+    font-size: 2.2rem;
+}
+.text-light
+{
+    color: #f4f4f4;
+}
+.text-red
+{
+    color: rgb(232, 25, 25);
+}
+.text-grey
+{
+    color: rgba(53, 51, 51, 0.333);
+}
+.text-black{
+    color: rgb(19, 19, 19);
+}
+.bg-dark{
+    background-color: rgb(23, 12, 49);
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.btn-primary{
+    color: red;
+    border-radius: 2em;
+   
+    padding: 0.75em;
+    background-color:white;
+}
+.btn-sec{
+    border: 2px solid red;
+    border-radius: 1.5em;
+    background-color: #ffff;
+}
+/*---------utility class----------*/
+
+
+.header {
+    height: 95vh;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.5)), url('header.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat; 
+}
+.navbar a:hover{
+    border-bottom: 1px solid #e2e5d0;
+}
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header-content p{
+    text-transform: uppercase;
+}
+ .header-content{
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2));
+ }
+ /* ------------------------------ */
+ .showcase{
+    background: #ddd;
+    padding: 10rem 0;
+ }
+ .row{
+    height: 350px;
+    box-shadow: 10px 5px 200px 0px rgb(145, 137, 137);
+ }
+
+ .row1{
+    margin-bottom: 10rem;
+    background: rgb(243, 239, 239);
+ }
+ .row2{
+    margin-bottom: 10rem;
+    background: rgb(243, 239, 239);
+ }
+ .row1 .imgbox, .row2 .textbox{
+    float: left;
+    width: 50%;
+ }
+ .row2 .imgbox, .row1 .textbox{
+    float: right;
+    width: 50%;
+ }
+  .row .imgbox{
+    /* border: 4px solid yellow; */
+    height: 100%;
+ }
+ .row .textbox{
+    /* border: 4px solid blueviolet; */
+    padding: 2rem;
+    height: 100%;
+    /* font-weight: 200; */
+ } 
+ .row .imgbox img{
+    width:100%;
+    height: 100%;
+    display: inline-block;
+    object-fit: cover;
+ }
+ .row::after{
+    content: '';
+    display: block;
+    clear: both;
+ }
+ /* _________________features style----------------------- */
+ .features{
+    padding: 10rem 0;
+ }
+ .box-wrapper{
+    box-shadow: 0px 2px 10px 5px rgb(108, 105, 105);
+
+ }
+ .box{
+    width: 33.333333%;
+    float: left;
+    border: 2px solid black;
+    padding: 2rem;
+    text-align: center;
+    color: rgb(239, 234, 234);
+    font-weight: 100;
+ }
+ .box1, .box3
+ {
+    background-color: rgb(47, 74, 47);
+ }
+ .box2{
+    background-color: rgb(193, 77, 96);
+ }
+ .box-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+ }
+.footer{
+    background: rgb(44, 44, 44);
+    color: azure;
+    height: 25px;
+    padding: 2rem;
+    text-align: center;
+   
+}
+.socialmedialink i{
+    margin: 1rem;
+}
+/* ---------about page--------------- */
+.about{
+    padding: 5rem 0;
+}
+.about .heading{
+    border-bottom: 4px solid rgb(250, 38, 112);
+}
+.aboutwrapper{
+    /* border: 2px solid black; */
+    text-align: center;
+    margin-top: 2rem;  
+    color: rgb(248, 75, 158);
+}
+
+.aboutwrapper .left{
+    float:left;
+    width: 50%;
+
+}
+.aboutwrapper .right{
+    float: right;
+    width: 50%;
+
+}
+.aboutwrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.aboutwrapper li::before{
+    content: '\2713';
+    color: rgb(236, 18, 167);
+    font-weight: bold;
+    padding-right: 1rem;
+
+}
+
+
+.count{
+    /* border: 1px solid black; */
+    margin-top: 3rem;
+    
+}
+.count-class{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+}
+.count-class::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.count-class span{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(182, 21, 21);
+
+}
+.count-class p{
+    font-weight: 700;
+    color: black;
+    font-size: 1rem;
+}
+
+
+.cta-banner{
+    background: linear-gradient(25deg,#f96a9f,#ff6f80 50%);
+    color: whitesmoke;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px#00000057;
+    margin-top: 3rem;
+}
+.ctaleft{
+    float: left;
+    width: 60%;
+}
+.ctaline{
+    font-size: 2rem;
+    font-weight:700;
+    margin-top: 1.5rem;
+}
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight:700;
+   border: 4px solid white;
+padding: 0.3rem 2.5em;
+letter-spacing: 0.5rem;
+color: #f4f4f4;
+
+}
+.ctaright{
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+.cta-banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* ------------------------contact page------------------------------------ */
+.contact-form{
+    padding: 5rem 0;
+    background: #f7f7f7;
+}
+/* .form-wrapper{
+    border: 10px solid red;
+   
+} */
+.form-wrapper .comp-add{
+    /* border: 4px dotted green; */
+    width: 40%;
+    float: left;
+    background: #fff;
+    height: 760px;
+}
+.form{
+    /* border: 4px dotted blue; */
+    width: 40%;
+    float: right;
+}
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+    background: #fff;
+}
+.form-wrapper .comp-add img{
+    max-width: 98%;
+    min-height: 40rem;
+    object-position: right;
+}
+
+
+/* ------------------------------------form----------------------- */
+.form-wrapper .form{
+    font-size: 1.6rem;
+    background: #fff;
+    /* border: 2px dotted black; */
+    width: 49%;
+    float: right;
+    padding: 1rem;
+    height: 760px;
+}
+.form h1::after{
+    content: '';
+    display: block;
+    clear: both;
+    background:3px solid red;
+    width: 100%;
+}
+.form-wrapper label{
+    display: block;
+}
+.form-wrapper .form-input{
+    margin-bottom: 0.5rem;
+     width: 100%;
+}
+.form-wrapper .form .form-grp{
+    margin-bottom: 1.2rem;
+}
+.form-wrapper .form label::after{
+    content: '*';
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+}
+.form-btn{
+   display: block;
+   margin: 0 auto;
+   padding: 0.5e, 3em;
+   font-size: 1.8rem;
+   text-transform: uppercase;
+   background-color: red;
+   color: #fff;
+   outline: none;
+   border: none;
+   cursor: pointer;
+
+
+}
+
+/* -------------------------media query--------------------------------- */
+@media(max-width:500px){
+    html{
+         font-size: 8px;
+        /* font-size: 100%; */
+    }
+
+ .navbar .nav-items, .navbar .logo{
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+ .header-content .main-heading{
+    display: none;
+}
+.row{
+    height: auto;
+    width: 100%;
+}
+.row .imgbox,
+.row .textbox{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.features .box{
+    float: none;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 2px 10px 5px rgb(108, 105, 105);
+}
+.features .box2,
+.features .box3{
+    margin-top: 7rem;
+}
+.box-wrapper{
+    box-shadow: none;
+
+ }
+.ctaleft, .ctaright{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.form-wrapper .comp-add{
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+
+}
+.form-wrapper .form{
+    float: none;
+    width: 100%;
+    height: auto;
+}
+}
